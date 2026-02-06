@@ -1,0 +1,143 @@
+[
+  {
+    "rule_id": "Rule_001",
+    "pattern_type": "Type_1",
+    "source_text": "配电室门净宽度不应小于1.2m",
+    "source_text_en": "The clear width of distribution room door shall not be less than 1.2m",
+    "entities": [
+      {"type": "sobj", "text": "配电室", "span": [0, 3]},
+      {"type": "obj", "text": "门", "span": [3, 4]},
+      {"type": "prop", "text": "净宽度", "span": [4, 7]},
+      {"type": "cmp", "text": "不应小于", "span": [7, 11]},
+      {"type": "Rprop", "text": "1.2m", "span": [11, 15]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:DistributionRoomDoorWidthShape\n    a sh:NodeShape ;\n    sh:targetClass pg:DistributionRoomDoor ;\n    sh:property [\n        sh:path pg:clearWidth ;\n        sh:minInclusive \"1.2\"^^xsd:decimal ;\n        sh:message \"配电室门净宽度不应小于1.2m\" ;\n    ] .",
+    "validation_target": "DistributionRoomDoor"
+  },
+  {
+    "rule_id": "Rule_002",
+    "pattern_type": "Type_1",
+    "source_text": "控制室耐压值宜为2.0kPa",
+    "source_text_en": "The pressure resistance of control room should be 2.0kPa",
+    "entities": [
+      {"type": "sobj", "text": "控制室", "span": [0, 3]},
+      {"type": "prop", "text": "耐压值", "span": [3, 6]},
+      {"type": "cmp", "text": "宜为", "span": [6, 8]},
+      {"type": "Rprop", "text": "2.0kPa", "span": [8, 14]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:ControlRoomPressureShape\n    a sh:NodeShape ;\n    sh:targetClass pg:ControlRoom ;\n    sh:property [\n        sh:path pg:pressure ;\n        sh:equals \"2.0\"^^xsd:decimal ;\n        sh:message \"控制室耐压值宜为2.0kPa\" ;\n    ] .",
+    "validation_target": "ControlRoom"
+  },
+  {
+    "rule_id": "Rule_003",
+    "pattern_type": "Type_1",
+    "source_text": "开关室耐火极限应满足1.0h",
+    "source_text_en": "The fire resistance rating of switchgear room shall meet 1.0h",
+    "entities": [
+      {"type": "sobj", "text": "开关室", "span": [0, 3]},
+      {"type": "prop", "text": "耐火极限", "span": [3, 7]},
+      {"type": "cmp", "text": "应满足", "span": [7, 10]},
+      {"type": "Rprop", "text": "1.0h", "span": [10, 14]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:SwitchgearRoomFireResistanceShape\n    a sh:NodeShape ;\n    sh:targetClass pg:SwitchgearRoom ;\n    sh:property [\n        sh:path pg:fireResistance ;\n        sh:equals \"1.0\"^^xsd:decimal ;\n        sh:message \"开关室耐火极限应满足1.0h\" ;\n    ] .",
+    "validation_target": "SwitchgearRoom"
+  },
+  {
+    "rule_id": "Rule_004",
+    "pattern_type": "Type_1",
+    "source_text": "泵房疏散距离不小于20m",
+    "source_text_en": "The evacuation distance of pump room shall not be less than 20m",
+    "entities": [
+      {"type": "sobj", "text": "泵房", "span": [0, 2]},
+      {"type": "prop", "text": "疏散距离", "span": [2, 6]},
+      {"type": "cmp", "text": "不小于", "span": [6, 9]},
+      {"type": "Rprop", "text": "20m", "span": [9, 12]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:PumpRoomEgressDistanceShape\n    a sh:NodeShape ;\n    sh:targetClass pg:PumpRoom ;\n    sh:property [\n        sh:path pg:egressDistance ;\n        sh:minInclusive \"20.0\"^^xsd:decimal ;\n        sh:message \"泵房疏散距离不小于20m\" ;\n    ] .",
+    "validation_target": "PumpRoom"
+  },
+  {
+    "rule_id": "Rule_005",
+    "pattern_type": "Type_1",
+    "source_text": "消防泵房净高应为2.4m",
+    "source_text_en": "The clear height of fire pump room shall be 2.4m",
+    "entities": [
+      {"type": "sobj", "text": "消防泵房", "span": [0, 4]},
+      {"type": "prop", "text": "净高", "span": [4, 6]},
+      {"type": "cmp", "text": "应为", "span": [6, 8]},
+      {"type": "Rprop", "text": "2.4m", "span": [8, 12]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:FirePumpRoomClearHeightShape\n    a sh:NodeShape ;\n    sh:targetClass pg:FirePumpRoom ;\n    sh:property [\n        sh:path pg:clearHeight ;\n        sh:equals \"2.4\"^^xsd:decimal ;\n        sh:message \"消防泵房净高应为2.4m\" ;\n    ] .",
+    "validation_target": "FirePumpRoom"
+  },
+  {
+    "rule_id": "Rule_006",
+    "pattern_type": "Type_1",
+    "source_text": "配电间疏散距离不得大于15m",
+    "source_text_en": "The evacuation distance of distribution room shall not exceed 15m",
+    "entities": [
+      {"type": "sobj", "text": "配电间", "span": [0, 3]},
+      {"type": "prop", "text": "疏散距离", "span": [3, 7]},
+      {"type": "cmp", "text": "不得大于", "span": [7, 11]},
+      {"type": "Rprop", "text": "15m", "span": [11, 14]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:SwitchgearRoomEgressDistanceShape\n    a sh:NodeShape ;\n    sh:targetClass pg:SwitchgearRoom ;\n    sh:property [\n        sh:path pg:egressDistance ;\n        sh:maxInclusive \"15.0\"^^xsd:decimal ;\n        sh:message \"配电间疏散距离不得大于15m\" ;\n    ] .",
+    "validation_target": "SwitchgearRoom"
+  },
+  {
+    "rule_id": "Rule_007",
+    "pattern_type": "Type_1",
+    "source_text": "高压室净宽度不得大于1.0m",
+    "source_text_en": "The clear width of high-voltage room shall not exceed 1.0m",
+    "entities": [
+      {"type": "sobj", "text": "高压室", "span": [0, 3]},
+      {"type": "prop", "text": "净宽度", "span": [3, 6]},
+      {"type": "cmp", "text": "不得大于", "span": [6, 10]},
+      {"type": "Rprop", "text": "1.0m", "span": [10, 14]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:HighVoltageRoomClearWidthShape\n    a sh:NodeShape ;\n    sh:targetClass pg:HighVoltageRoom ;\n    sh:property [\n        sh:path pg:clearWidth ;\n        sh:maxInclusive \"1.0\"^^xsd:decimal ;\n        sh:message \"高压室净宽度不得大于1.0m\" ;\n    ] .",
+    "validation_target": "HighVoltageRoom"
+  },
+  {
+    "rule_id": "Rule_008",
+    "pattern_type": "Type_1",
+    "source_text": "柴油发电机房净高不得大于3.3m",
+    "source_text_en": "The clear height of diesel generator room shall not exceed 3.3m",
+    "entities": [
+      {"type": "sobj", "text": "柴油发电机房", "span": [0, 6]},
+      {"type": "prop", "text": "净高", "span": [6, 8]},
+      {"type": "cmp", "text": "不得大于", "span": [8, 12]},
+      {"type": "Rprop", "text": "3.3m", "span": [12, 16]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:GeneratorRoomClearHeightShape\n    a sh:NodeShape ;\n    sh:targetClass pg:GeneratorRoom ;\n    sh:property [\n        sh:path pg:clearHeight ;\n        sh:maxInclusive \"3.3\"^^xsd:decimal ;\n        sh:message \"柴油发电机房净高不得大于3.3m\" ;\n    ] .",
+    "validation_target": "GeneratorRoom"
+  },
+  {
+    "rule_id": "Rule_009",
+    "pattern_type": "Type_1",
+    "source_text": "配电间净空高度不大于2.8m",
+    "source_text_en": "The clear height of distribution room shall not exceed 2.8m",
+    "entities": [
+      {"type": "sobj", "text": "配电间", "span": [0, 3]},
+      {"type": "prop", "text": "净空高度", "span": [3, 7]},
+      {"type": "cmp", "text": "不大于", "span": [7, 10]},
+      {"type": "Rprop", "text": "2.8m", "span": [10, 14]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:SwitchgearRoomClearHeightShape\n    a sh:NodeShape ;\n    sh:targetClass pg:SwitchgearRoom ;\n    sh:property [\n        sh:path pg:clearHeight ;\n        sh:maxInclusive \"2.8\"^^xsd:decimal ;\n        sh:message \"配电间净空高度不大于2.8m\" ;\n    ] .",
+    "validation_target": "SwitchgearRoom"
+  },
+  {
+    "rule_id": "Rule_010",
+    "pattern_type": "Type_1",
+    "source_text": "UPS机房耐压值应满足3.0kPa",
+    "source_text_en": "The pressure resistance of UPS room shall meet 3.0kPa",
+    "entities": [
+      {"type": "sobj", "text": "UPS机房", "span": [0, 5]},
+      {"type": "prop", "text": "耐压值", "span": [5, 8]},
+      {"type": "cmp", "text": "应满足", "span": [8, 11]},
+      {"type": "Rprop", "text": "3.0kPa", "span": [11, 17]}
+    ],
+    "expected_shacl": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix pg: <http://powergrid.ontology.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\npg:UPSRoomPressureShape\n    a sh:NodeShape ;\n    sh:targetClass pg:UPSRoom ;\n    sh:property [\n        sh:path pg:pressure ;\n        sh:equals \"3.0\"^^xsd:decimal ;\n        sh:message \"UPS机房耐压值应满足3.0kPa\" ;\n    ] .",
+    "validation_target": "UPSRoom"
+  }
+]

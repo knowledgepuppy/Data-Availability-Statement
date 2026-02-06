@@ -1,0 +1,111 @@
+{
+  "description": "Sample IFC building elements extracted from a power distribution facility BIM model",
+  "ifc_schema": "IFC4",
+  "elements": [
+    {
+      "entity_id": "DOOR_001",
+      "ifc_type": "IfcDoor",
+      "name": "Distribution Room Door M-01",
+      "name_cn": "配电室门 M-01",
+      "location": "Distribution Room (配电室)",
+      "attributes": {
+        "GlobalId": "2O2Fr$t4X7Zf89_Jq1H$8K",
+        "OverallWidth": 1200.0,
+        "OverallHeight": 2100.0,
+        "OperationType": "SINGLE_SWING_LEFT"
+      },
+      "derived_properties": {
+        "ClearWidth": 1150.0,
+        "ClearWidth_calculation": "OverallWidth - 2 × FrameThickness (1200 - 2×25 = 1150mm)"
+      },
+      "property_sets": {
+        "Pset_DoorCommon": {
+          "FireRating": "Class B (乙级)",
+          "AcousticRating": "35dB",
+          "IsExternal": false,
+          "ThermalTransmittance": null
+        }
+      },
+      "compliance_status": {
+        "rule": "配电室门净宽度不应小于1.2m",
+        "required_value": 1200,
+        "actual_value": 1150,
+        "result": "FAIL",
+        "message": "Door clear width (1150mm) is less than required minimum (1200mm)"
+      }
+    },
+    {
+      "entity_id": "DOOR_002",
+      "ifc_type": "IfcDoor",
+      "name": "Control Room Door M-02",
+      "name_cn": "控制室门 M-02",
+      "location": "Control Room (控制室)",
+      "attributes": {
+        "GlobalId": "3P3Gs$u5Y8Ag90_Kr2I$9L",
+        "OverallWidth": 1300.0,
+        "OverallHeight": 2100.0,
+        "OperationType": "DOUBLE_SWING"
+      },
+      "derived_properties": {
+        "ClearWidth": 1250.0,
+        "ClearWidth_calculation": "OverallWidth - 2 × FrameThickness (1300 - 2×25 = 1250mm)"
+      },
+      "property_sets": {
+        "Pset_DoorCommon": {
+          "FireRating": "Class A (甲级)",
+          "AcousticRating": "40dB",
+          "IsExternal": false,
+          "ThermalTransmittance": null
+        }
+      },
+      "compliance_status": {
+        "rule": "控制室门净宽度不应小于1.2m",
+        "required_value": 1200,
+        "actual_value": 1250,
+        "result": "PASS",
+        "message": "Door clear width (1250mm) meets the minimum requirement (1200mm)"
+      }
+    },
+    {
+      "entity_id": "DOOR_003",
+      "ifc_type": "IfcDoor",
+      "name": "Fire Pump Room Door M-03",
+      "name_cn": "消防泵房门 M-03",
+      "location": "Fire Pump Room (消防泵房)",
+      "attributes": {
+        "GlobalId": "4Q4Ht$v6Z9Bh01_Ls3J$0M",
+        "OverallWidth": 1500.0,
+        "OverallHeight": 2400.0,
+        "OperationType": "DOUBLE_SWING"
+      },
+      "derived_properties": {
+        "ClearWidth": 1450.0,
+        "ClearWidth_calculation": "OverallWidth - 2 × FrameThickness (1500 - 2×25 = 1450mm)"
+      },
+      "property_sets": {
+        "Pset_DoorCommon": {
+          "FireRating": "Class A (甲级)",
+          "AcousticRating": "45dB",
+          "IsExternal": true,
+          "ThermalTransmittance": 2.5
+        }
+      },
+      "compliance_status": {
+        "rule": "消防泵房门净宽度不应小于1.4m",
+        "required_value": 1400,
+        "actual_value": 1450,
+        "result": "PASS",
+        "message": "Door clear width (1450mm) meets the minimum requirement (1400mm)"
+      }
+    }
+  ],
+  "notes": {
+    "unit_system": "All dimensions are in millimeters (mm)",
+    "frame_thickness": "Standard door frame thickness assumed as 25mm per side",
+    "fire_rating_mapping": {
+      "甲级": "Class A - Fire resistance ≥ 1.5h",
+      "乙级": "Class B - Fire resistance ≥ 1.0h",
+      "丙级": "Class C - Fire resistance ≥ 0.5h"
+    }
+  }
+}

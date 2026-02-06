@@ -1,0 +1,270 @@
+[
+  {
+    "id": "clause_01",
+    "text": "配电室门的净宽度不应小于1.2m",
+    "text_en": "The clear width of the distribution room door shall not be less than 1.2m",
+    "entities": [
+      {"type": "sobj", "text": "配电室", "text_en": "distribution room", "span": [0, 3]},
+      {"type": "obj", "text": "门", "text_en": "door", "span": [3, 4]},
+      {"type": "prop", "text": "净宽度", "text_en": "clear width", "span": [5, 8]},
+      {"type": "cmp", "text": "不应小于", "text_en": "shall not be less than", "span": [8, 12]},
+      {"type": "Rprop", "text": "1.2m", "text_en": "1.2m", "span": [12, 16]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_02",
+    "text": "UPS机房窗的净空高度不小于2.8m",
+    "text_en": "The clear height of UPS room windows shall not be less than 2.8m",
+    "entities": [
+      {"type": "sobj", "text": "UPS机房", "text_en": "UPS room", "span": [0, 5]},
+      {"type": "obj", "text": "窗", "text_en": "window", "span": [5, 6]},
+      {"type": "prop", "text": "净空高度", "text_en": "clear height", "span": [7, 11]},
+      {"type": "cmp", "text": "不小于", "text_en": "not less than", "span": [11, 14]},
+      {"type": "Rprop", "text": "2.8m", "text_en": "2.8m", "span": [14, 18]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "high"
+  },
+  {
+    "id": "clause_03",
+    "text": "高压室的相对湿度不应大于60%",
+    "text_en": "The relative humidity of high-voltage room shall not exceed 60%",
+    "entities": [
+      {"type": "sobj", "text": "高压室", "text_en": "high-voltage room", "span": [0, 3]},
+      {"type": "prop", "text": "相对湿度", "text_en": "relative humidity", "span": [4, 8]},
+      {"type": "cmp", "text": "不应大于", "text_en": "shall not exceed", "span": [8, 12]},
+      {"type": "Rprop", "text": "60%", "text_en": "60%", "span": [12, 15]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_04",
+    "text": "变压器室的耐火极限应为2.0h",
+    "text_en": "The fire resistance rating of transformer room shall be 2.0h",
+    "entities": [
+      {"type": "sobj", "text": "变压器室", "text_en": "transformer room", "span": [0, 4]},
+      {"type": "prop", "text": "耐火极限", "text_en": "fire resistance rating", "span": [5, 9]},
+      {"type": "cmp", "text": "应为", "text_en": "shall be", "span": [9, 11]},
+      {"type": "Rprop", "text": "2.0h", "text_en": "2.0h", "span": [11, 15]}
+    ],
+    "pattern": "Type_5",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_05",
+    "text": "控制室的净高宜为3.0m",
+    "text_en": "The clear height of control room should be 3.0m",
+    "entities": [
+      {"type": "sobj", "text": "控制室", "text_en": "control room", "span": [0, 3]},
+      {"type": "prop", "text": "净高", "text_en": "clear height", "span": [4, 6]},
+      {"type": "cmp", "text": "宜为", "text_en": "should be", "span": [6, 8]},
+      {"type": "Rprop", "text": "3.0m", "text_en": "3.0m", "span": [8, 12]}
+    ],
+    "pattern": "Type_5",
+    "difficulty": "low"
+  },
+  {
+    "id": "clause_06",
+    "text": "蓄电池室的疏散距离不应小于25m",
+    "text_en": "The evacuation distance of battery room shall not be less than 25m",
+    "entities": [
+      {"type": "sobj", "text": "蓄电池室", "text_en": "battery room", "span": [0, 4]},
+      {"type": "prop", "text": "疏散距离", "text_en": "evacuation distance", "span": [5, 9]},
+      {"type": "cmp", "text": "不应小于", "text_en": "shall not be less than", "span": [9, 13]},
+      {"type": "Rprop", "text": "25m", "text_en": "25m", "span": [13, 16]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_07",
+    "text": "低压室疏散出口的净空高度不小于2.4m",
+    "text_en": "The clear height of low-voltage room evacuation exit shall not be less than 2.4m",
+    "entities": [
+      {"type": "sobj", "text": "低压室", "text_en": "low-voltage room", "span": [0, 3]},
+      {"type": "obj", "text": "疏散出口", "text_en": "evacuation exit", "span": [3, 7]},
+      {"type": "prop", "text": "净空高度", "text_en": "clear height", "span": [8, 12]},
+      {"type": "cmp", "text": "不小于", "text_en": "not less than", "span": [12, 15]},
+      {"type": "Rprop", "text": "2.4m", "text_en": "2.4m", "span": [15, 19]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "high"
+  },
+  {
+    "id": "clause_08",
+    "text": "通信机房的耐火极限不得大于1.5h",
+    "text_en": "The fire resistance rating of communication room shall not exceed 1.5h",
+    "entities": [
+      {"type": "sobj", "text": "通信机房", "text_en": "communication room", "span": [0, 4]},
+      {"type": "prop", "text": "耐火极限", "text_en": "fire resistance rating", "span": [5, 9]},
+      {"type": "cmp", "text": "不得大于", "text_en": "shall not exceed", "span": [9, 13]},
+      {"type": "Rprop", "text": "1.5h", "text_en": "1.5h", "span": [13, 17]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_09",
+    "text": "消防泵房检修口应满足甲级防火要求",
+    "text_en": "The inspection opening of fire pump room shall meet Class A fire protection requirements",
+    "entities": [
+      {"type": "sobj", "text": "消防泵房", "text_en": "fire pump room", "span": [0, 4]},
+      {"type": "obj", "text": "检修口", "text_en": "inspection opening", "span": [4, 7]},
+      {"type": "cmp", "text": "应满足", "text_en": "shall meet", "span": [7, 10]},
+      {"type": "Rprop", "text": "甲级防火要求", "text_en": "Class A fire protection", "span": [10, 16]}
+    ],
+    "pattern": "Type_4",
+    "difficulty": "high"
+  },
+  {
+    "id": "clause_10",
+    "text": "电缆夹层走道的疏散距离不大于30m",
+    "text_en": "The evacuation distance of cable mezzanine corridor shall not exceed 30m",
+    "entities": [
+      {"type": "sobj", "text": "电缆夹层", "text_en": "cable mezzanine", "span": [0, 4]},
+      {"type": "obj", "text": "走道", "text_en": "corridor", "span": [4, 6]},
+      {"type": "prop", "text": "疏散距离", "text_en": "evacuation distance", "span": [7, 11]},
+      {"type": "cmp", "text": "不大于", "text_en": "not exceed", "span": [11, 14]},
+      {"type": "Rprop", "text": "30m", "text_en": "30m", "span": [14, 17]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_11",
+    "text": "柴油发电机房的净高不得小于3.3m",
+    "text_en": "The clear height of diesel generator room shall not be less than 3.3m",
+    "entities": [
+      {"type": "sobj", "text": "柴油发电机房", "text_en": "diesel generator room", "span": [0, 6]},
+      {"type": "prop", "text": "净高", "text_en": "clear height", "span": [7, 9]},
+      {"type": "cmp", "text": "不得小于", "text_en": "shall not be less than", "span": [9, 13]},
+      {"type": "Rprop", "text": "3.3m", "text_en": "3.3m", "span": [13, 17]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_12",
+    "text": "开关室的耐火极限应满足1.0h",
+    "text_en": "The fire resistance rating of switchgear room shall meet 1.0h",
+    "entities": [
+      {"type": "sobj", "text": "开关室", "text_en": "switchgear room", "span": [0, 3]},
+      {"type": "prop", "text": "耐火极限", "text_en": "fire resistance rating", "span": [4, 8]},
+      {"type": "cmp", "text": "应满足", "text_en": "shall meet", "span": [8, 11]},
+      {"type": "Rprop", "text": "1.0h", "text_en": "1.0h", "span": [11, 15]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "low"
+  },
+  {
+    "id": "clause_13",
+    "text": "值班室送风口的净宽度应为1.2m",
+    "text_en": "The clear width of duty room air inlet shall be 1.2m",
+    "entities": [
+      {"type": "sobj", "text": "值班室", "text_en": "duty room", "span": [0, 3]},
+      {"type": "obj", "text": "送风口", "text_en": "air inlet", "span": [3, 6]},
+      {"type": "prop", "text": "净宽度", "text_en": "clear width", "span": [7, 10]},
+      {"type": "cmp", "text": "应为", "text_en": "shall be", "span": [10, 12]},
+      {"type": "Rprop", "text": "1.2m", "text_en": "1.2m", "span": [12, 16]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_14",
+    "text": "储油间孔口面积不得小于1.5m²",
+    "text_en": "The opening area of oil storage room shall not be less than 1.5m²",
+    "entities": [
+      {"type": "sobj", "text": "储油间", "text_en": "oil storage room", "span": [0, 3]},
+      {"type": "prop", "text": "孔口面积", "text_en": "opening area", "span": [3, 7]},
+      {"type": "cmp", "text": "不得小于", "text_en": "shall not be less than", "span": [7, 11]},
+      {"type": "Rprop", "text": "1.5m²", "text_en": "1.5m²", "span": [11, 16]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_15",
+    "text": "风机房的孔口面积不得小于1.0m²",
+    "text_en": "The opening area of fan room shall not be less than 1.0m²",
+    "entities": [
+      {"type": "sobj", "text": "风机房", "text_en": "fan room", "span": [0, 3]},
+      {"type": "prop", "text": "孔口面积", "text_en": "opening area", "span": [4, 8]},
+      {"type": "cmp", "text": "不得小于", "text_en": "shall not be less than", "span": [8, 12]},
+      {"type": "Rprop", "text": "1.0m²", "text_en": "1.0m²", "span": [12, 17]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "low"
+  },
+  {
+    "id": "clause_16",
+    "text": "调度室的噪声级不应大于65dB",
+    "text_en": "The noise level of dispatch room shall not exceed 65dB",
+    "entities": [
+      {"type": "sobj", "text": "调度室", "text_en": "dispatch room", "span": [0, 3]},
+      {"type": "prop", "text": "噪声级", "text_en": "noise level", "span": [4, 7]},
+      {"type": "cmp", "text": "不应大于", "text_en": "shall not exceed", "span": [7, 11]},
+      {"type": "Rprop", "text": "65dB", "text_en": "65dB", "span": [11, 15]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "low"
+  },
+  {
+    "id": "clause_17",
+    "text": "泵房门的净宽度不应小于1.1m",
+    "text_en": "The clear width of pump room door shall not be less than 1.1m",
+    "entities": [
+      {"type": "sobj", "text": "泵房", "text_en": "pump room", "span": [0, 2]},
+      {"type": "obj", "text": "门", "text_en": "door", "span": [2, 3]},
+      {"type": "prop", "text": "净宽度", "text_en": "clear width", "span": [4, 7]},
+      {"type": "cmp", "text": "不应小于", "text_en": "shall not be less than", "span": [7, 11]},
+      {"type": "Rprop", "text": "1.1m", "text_en": "1.1m", "span": [11, 15]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "medium"
+  },
+  {
+    "id": "clause_18",
+    "text": "配电间疏散距离不得大于15m",
+    "text_en": "The evacuation distance of distribution room shall not exceed 15m",
+    "entities": [
+      {"type": "sobj", "text": "配电间", "text_en": "distribution room", "span": [0, 3]},
+      {"type": "prop", "text": "疏散距离", "text_en": "evacuation distance", "span": [3, 7]},
+      {"type": "cmp", "text": "不得大于", "text_en": "shall not exceed", "span": [7, 11]},
+      {"type": "Rprop", "text": "15m", "text_en": "15m", "span": [11, 14]}
+    ],
+    "pattern": "Type_1",
+    "difficulty": "low"
+  },
+  {
+    "id": "clause_19",
+    "text": "低压室防火卷帘的照度不得大于300lx",
+    "text_en": "The illumination of low-voltage room fire shutter shall not exceed 300lx",
+    "entities": [
+      {"type": "sobj", "text": "低压室", "text_en": "low-voltage room", "span": [0, 3]},
+      {"type": "obj", "text": "防火卷帘", "text_en": "fire shutter", "span": [3, 7]},
+      {"type": "prop", "text": "照度", "text_en": "illumination", "span": [8, 10]},
+      {"type": "cmp", "text": "不得大于", "text_en": "shall not exceed", "span": [10, 14]},
+      {"type": "Rprop", "text": "300lx", "text_en": "300lx", "span": [14, 19]}
+    ],
+    "pattern": "Type_2",
+    "difficulty": "high"
+  },
+  {
+    "id": "clause_20",
+    "text": "电缆沟噪声级不小于70dB且应采用乙级防火材料",
+    "text_en": "The noise level of cable trench shall not be less than 70dB and shall use Class B fire-resistant materials",
+    "entities": [
+      {"type": "sobj", "text": "电缆沟", "text_en": "cable trench", "span": [0, 3]},
+      {"type": "prop", "text": "噪声级", "text_en": "noise level", "span": [3, 6]},
+      {"type": "cmp", "text": "不小于", "text_en": "not less than", "span": [6, 9]},
+      {"type": "Rprop", "text": "70dB", "text_en": "70dB", "span": [9, 13]},
+      {"type": "ARprop", "text": "且应采用乙级防火材料", "text_en": "and shall use Class B fire-resistant materials", "span": [13, 23]}
+    ],
+    "pattern": "Type_3",
+    "difficulty": "high"
+  }
+]
